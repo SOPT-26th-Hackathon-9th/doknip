@@ -577,11 +577,22 @@
                                             <constraint firstAttribute="height" constant="162" id="dWU-gS-bwp"/>
                                         </constraints>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGF-6C-nz3">
+                                        <rect key="frame" x="0.0" y="175" width="103" height="20.333333333333343"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="103" id="aqN-ra-O0w"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="wAv-RK-phM" firstAttribute="top" secondItem="bfO-uK-ISA" secondAttribute="top" id="Fca-fG-loT"/>
+                                    <constraint firstItem="HGF-6C-nz3" firstAttribute="top" secondItem="wAv-RK-phM" secondAttribute="bottom" constant="13" id="LbP-j0-O0a"/>
                                     <constraint firstItem="wAv-RK-phM" firstAttribute="leading" secondItem="bfO-uK-ISA" secondAttribute="leading" id="bPf-cb-md0"/>
+                                    <constraint firstItem="HGF-6C-nz3" firstAttribute="leading" secondItem="bfO-uK-ISA" secondAttribute="leading" id="xls-W5-MN1"/>
                                 </constraints>
                             </view>
                         </subviews>
