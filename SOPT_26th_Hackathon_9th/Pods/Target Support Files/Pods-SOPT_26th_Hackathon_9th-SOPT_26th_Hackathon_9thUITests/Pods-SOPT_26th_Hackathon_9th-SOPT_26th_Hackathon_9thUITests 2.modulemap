@@ -1,0 +1,6 @@
+framework module Pods_SOPT_26th_Hackathon_9th_SOPT_26th_Hackathon_9thUITests {
+  umbrella header "Pods-SOPT_26th_Hackathon_9th-SOPT_26th_Hackathon_9thUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

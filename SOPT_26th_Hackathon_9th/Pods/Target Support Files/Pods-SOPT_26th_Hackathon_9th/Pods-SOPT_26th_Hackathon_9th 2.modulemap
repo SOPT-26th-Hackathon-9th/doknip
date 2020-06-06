@@ -1,0 +1,6 @@
+framework module Pods_SOPT_26th_Hackathon_9th {
+  umbrella header "Pods-SOPT_26th_Hackathon_9th-umbrella.h"
+
+  export *
+  module * { export * }
+}
