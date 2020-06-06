@@ -17,10 +17,14 @@
 		CC0B680E248C023100FE9111 /* SOPT_26th_Hackathon_9thTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0B680D248C023100FE9111 /* SOPT_26th_Hackathon_9thTests.swift */; };
 		CC0B6819248C023100FE9111 /* SOPT_26th_Hackathon_9thUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0B6818248C023100FE9111 /* SOPT_26th_Hackathon_9thUITests.swift */; };
 		CC18380C248C4E90008BE318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC18380B248C4E90008BE318 /* Main.storyboard */; };
-		CC183812248C50AB008BE318 /* ActorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC183811248C50AB008BE318 /* ActorCollectionViewCell.swift */; };
 		CC183814248C50D6008BE318 /* RecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC183813248C50D6008BE318 /* RecommendCollectionViewCell.swift */; };
 		DA00EE7D248C031400E143C3 /* Storyboard_th.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA00EE7C248C031400E143C3 /* Storyboard_th.storyboard */; };
 		DA00EE7F248C064B00E143C3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA00EE7E248C064B00E143C3 /* SecondViewController.swift */; };
+		DA560617248C55F400F83CC5 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA560613248C55F400F83CC5 /* NetworkResult.swift */; };
+		DA560618248C55F400F83CC5 /* serverStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA560614248C55F400F83CC5 /* serverStructure.swift */; };
+		DA560619248C55F400F83CC5 /* HomeService_TH.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA560615248C55F400F83CC5 /* HomeService_TH.swift */; };
+		DA56061A248C55F400F83CC5 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA560616248C55F400F83CC5 /* APIConstants.swift */; };
+		DA56061C248C56F200F83CC5 /* ActorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA56061B248C56F100F83CC5 /* ActorCollectionViewCell.swift */; };
 		FDD3CB10248C3CC0003BBD65 /* myPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3CB0F248C3CC0003BBD65 /* myPageViewController.swift */; };
 		FDD8B698248C051700D0233C /* FourthSectionContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8B68C248C051700D0233C /* FourthSectionContentCell.swift */; };
 		FDD8B699248C051700D0233C /* FourthSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8B68D248C051700D0233C /* FourthSectionCell.swift */; };
@@ -71,11 +75,15 @@
 		CC0B6818248C023100FE9111 /* SOPT_26th_Hackathon_9thUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOPT_26th_Hackathon_9thUITests.swift; sourceTree = "<group>"; };
 		CC0B681A248C023100FE9111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC18380B248C4E90008BE318 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		CC183811248C50AB008BE318 /* ActorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActorCollectionViewCell.swift; path = /Users/hansol/SOPT/NohHanSol/doknip/SOPT_26th_Hackathon_9th/SOPT_26th_Hackathon_9th/ActorCollectionViewCell.swift; sourceTree = "<absolute>"; };
 		CC183813248C50D6008BE318 /* RecommendCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewCell.swift; sourceTree = "<group>"; };
 		D61C192F93C9DB760EC535FF /* Pods-SOPT_26th_Hackathon_9th.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT_26th_Hackathon_9th.release.xcconfig"; path = "Target Support Files/Pods-SOPT_26th_Hackathon_9th/Pods-SOPT_26th_Hackathon_9th.release.xcconfig"; sourceTree = "<group>"; };
 		DA00EE7C248C031400E143C3 /* Storyboard_th.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard_th.storyboard; sourceTree = "<group>"; };
 		DA00EE7E248C064B00E143C3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DA560613248C55F400F83CC5 /* NetworkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		DA560614248C55F400F83CC5 /* serverStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = serverStructure.swift; sourceTree = "<group>"; };
+		DA560615248C55F400F83CC5 /* HomeService_TH.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeService_TH.swift; sourceTree = "<group>"; };
+		DA560616248C55F400F83CC5 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		DA56061B248C56F100F83CC5 /* ActorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActorCollectionViewCell.swift; sourceTree = "<group>"; };
 		E791EE770C9415A22FD1E402 /* Pods-SOPT_26th_Hackathon_9th.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT_26th_Hackathon_9th.debug.xcconfig"; path = "Target Support Files/Pods-SOPT_26th_Hackathon_9th/Pods-SOPT_26th_Hackathon_9th.debug.xcconfig"; sourceTree = "<group>"; };
 		E8ED78983E9038039C15064D /* Pods-SOPT_26th_Hackathon_9thTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT_26th_Hackathon_9thTests.debug.xcconfig"; path = "Target Support Files/Pods-SOPT_26th_Hackathon_9thTests/Pods-SOPT_26th_Hackathon_9thTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB91D535A5AED9C895022DD2 /* Pods-SOPT_26th_Hackathon_9th-SOPT_26th_Hackathon_9thUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT_26th_Hackathon_9th-SOPT_26th_Hackathon_9thUITests.release.xcconfig"; path = "Target Support Files/Pods-SOPT_26th_Hackathon_9th-SOPT_26th_Hackathon_9thUITests/Pods-SOPT_26th_Hackathon_9th-SOPT_26th_Hackathon_9thUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +177,7 @@
 		CC0B67F5248C022C00FE9111 /* SOPT_26th_Hackathon_9th */ = {
 			isa = PBXGroup;
 			children = (
+				DA560612248C551700F83CC5 /* API */,
 				CC183813248C50D6008BE318 /* RecommendCollectionViewCell.swift */,
 				FDD8B6A4248C052400D0233C /* homeMain.storyboard */,
 				CC18380B248C4E90008BE318 /* Main.storyboard */,
@@ -180,7 +189,7 @@
 				FDD8B691248C051700D0233C /* HomeViewController.swift */,
 				FDD8B68E248C051700D0233C /* SecondSectionCell.swift */,
 				FDD8B693248C051700D0233C /* SecondSectionContentCell.swift */,
-				CC183811248C50AB008BE318 /* ActorCollectionViewCell.swift */,
+				DA56061B248C56F100F83CC5 /* ActorCollectionViewCell.swift */,
 				FDD8B694248C051700D0233C /* ThirdSectionCell.swift */,
 				FDD8B697248C051700D0233C /* ThirdSectionContentCell.swift */,
 				CC0B67F6248C022C00FE9111 /* AppDelegate.swift */,
@@ -211,6 +220,17 @@
 				CC0B681A248C023100FE9111 /* Info.plist */,
 			);
 			path = SOPT_26th_Hackathon_9thUITests;
+			sourceTree = "<group>";
+		};
+		DA560612248C551700F83CC5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DA560616248C55F400F83CC5 /* APIConstants.swift */,
+				DA560615248C55F400F83CC5 /* HomeService_TH.swift */,
+				DA560613248C55F400F83CC5 /* NetworkResult.swift */,
+				DA560614248C55F400F83CC5 /* serverStructure.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,6 +474,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA560619248C55F400F83CC5 /* HomeService_TH.swift in Sources */,
+				DA560618248C55F400F83CC5 /* serverStructure.swift in Sources */,
 				DA00EE7F248C064B00E143C3 /* SecondViewController.swift in Sources */,
 				CC0B67F7248C022C00FE9111 /* AppDelegate.swift in Sources */,
 				CC0B67F9248C022C00FE9111 /* SceneDelegate.swift in Sources */,
@@ -464,7 +486,7 @@
 				CC0B67F7248C022C00FE9111 /* AppDelegate.swift in Sources */,
 				FDD8B6A3248C051700D0233C /* ThirdSectionContentCell.swift in Sources */,
 				FDD8B69F248C051700D0233C /* SecondSectionContentCell.swift in Sources */,
-				CC183812248C50AB008BE318 /* ActorCollectionViewCell.swift in Sources */,
+				DA56061A248C55F400F83CC5 /* APIConstants.swift in Sources */,
 				FDD8B699248C051700D0233C /* FourthSectionCell.swift in Sources */,
 				FDD8B69D248C051700D0233C /* HomeViewController.swift in Sources */,
 				CC0B67F9248C022C00FE9111 /* SceneDelegate.swift in Sources */,
@@ -472,6 +494,8 @@
 				FDD8B69E248C051700D0233C /* FirstSectionContentCell.swift in Sources */,
 				FDD8B69A248C051700D0233C /* SecondSectionCell.swift in Sources */,
 				CC183814248C50D6008BE318 /* RecommendCollectionViewCell.swift in Sources */,
+				DA560617248C55F400F83CC5 /* NetworkResult.swift in Sources */,
+				DA56061C248C56F200F83CC5 /* ActorCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
