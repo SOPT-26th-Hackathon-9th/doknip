@@ -34,6 +34,7 @@ class SecondViewController: UIViewController {
         BannerScrollView.alwaysBounceVertical = false // 수직 스크롤 바운스 안되게 설정
         BannerPageController.numberOfPages = imageURL.count
         BannerScrollView.delegate = self
+        BannerScrollView.tag = 1
         self.view.bringSubviewToFront(BannerPageController)
     }
     
@@ -122,10 +123,25 @@ extension SecondViewController:UICollectionViewDataSource{
         }
     }
 }
+extension SecondViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        if collectionView.tag == 1 {
+            return UIEdgeInsets(top: 0, left: 8,bottom: 0, right: 8)
+        }
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        if collectionView.tag == 1 {return 10}
+        else {return 10}
+    }
+}
 extension SecondViewController: UIScrollViewDelegate{
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        if(scrollView.tag == 1){
         scrollView.bringSubviewToFront(BannerPageController)
         BannerPageController.currentPage = Int(floor(scrollView.contentOffset.x / self.view.frame.width))
+        }
     }
 }
 extension UIImageView {
