@@ -11,13 +11,21 @@ import UIKit
 class SecondViewController: UIViewController {
     @IBOutlet weak var BannerPageController: UIPageControl!
     @IBOutlet weak var BannerScrollView: UIScrollView!
-    func Banner(imageURL:[URL]){
+    
+    @IBAction func goBack(_ sender: Any) {
+    }
+    @IBAction func searchButton(_ sender: Any) {
+    }
+    @IBAction func myPageButton(_ sender: Any) {
+    }
+    
+    func Banner(imageURL:[String]){
         for index in 0..<imageURL.count {
             let subView = UIImageView()
             subView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.width * (204/375))
             subView.frame.origin.x = self.view.frame.width * CGFloat(index)
             subView.backgroundColor = UIColor.blue
-            subView.setImage(path: imageURL[index])
+            subView.image = UIImage(named: imageURL[index])
             subView.contentMode = UIView.ContentMode.scaleToFill
             BannerScrollView.addSubview(subView)
             //subView.layer.borderWidth = 2
@@ -34,7 +42,7 @@ class SecondViewController: UIViewController {
         BannerScrollView.alwaysBounceVertical = false // 수직 스크롤 바운스 안되게 설정
         BannerPageController.numberOfPages = imageURL.count
         BannerScrollView.delegate = self
-        BannerScrollView.tag = 1
+        BannerScrollView.tag = 4
         self.view.bringSubviewToFront(BannerPageController)
     }
     
@@ -60,10 +68,29 @@ class SecondViewController: UIViewController {
         movieTimeLabel.text = time
         storyLabel.text = story
     }
+    
+    @IBOutlet weak var buttonUI: UIButton!
+    func grad(){
+        let gradient = CAGradientLayer()
+        gradient.frame = buttonUI.frame
+        gradient.startPoint = CGPoint(x: 0, y: 0)
+        gradient.endPoint   = CGPoint(x: gradient.frame.width, y: gradient.frame.height)
+        gradient.locations  = [0, 0.65, 1]
+        gradient.colors =
+        [UIColor(red: 55.0 / 255.0, green: 70.0 / 255.0, blue: 250.0 / 255.0, alpha: 1.0).cgColor,
+         UIColor(red: 193.0 / 255.0, green: 56.0 / 255.0, blue: 56.0 / 255.0, alpha: 1.0).cgColor]
+        
+        gradient.shouldRasterize = true
+        buttonUI.layer.addSublayer(gradient)
+    }
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        let temp:[URL] = [URL(string: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSBfOQPXQAE9iuYAB_qcKG_hmKn5LY_dzoE0oe8Wx2k7m6hcs2P&usqp=CAU")!,URL(string: "https://res.heraldm.com/phpwas/restmb_idxmake.php?idx=507&simg=/content/image/2019/11/02/20191102000070_0.jpg")!]
-        Banner(imageURL: temp)
+        grad()
+        let bannerImageName:[String] = ["7","8"]
+        //let temp:[URL] = [URL(string: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSBfOQPXQAE9iuYAB_qcKG_hmKn5LY_dzoE0oe8Wx2k7m6hcs2P&usqp=CAU")!,URL(string: "https://res.heraldm.com/phpwas/restmb_idxmake.php?idx=507&simg=/content/image/2019/11/02/20191102000070_0.jpg")!]
+        Banner(imageURL: bannerImageName)
         setmovieIfo(date: "2020.06.07", time: "16:00~18:00", story: "asdjflasdjflajsdlfjlajdlfjlaksdjflalsdjflasdfklasjdfkljalsdfjlsajdflhdjfljasdlkfjasljdfjalsjflalsjdflasjflasdkfljasdfjlasjdfljadslajfl")
         
         setActorView()
@@ -138,7 +165,7 @@ extension SecondViewController: UICollectionViewDelegateFlowLayout {
 }
 extension SecondViewController: UIScrollViewDelegate{
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        if(scrollView.tag == 1){
+        if(scrollView.tag == 4){
         scrollView.bringSubviewToFront(BannerPageController)
         BannerPageController.currentPage = Int(floor(scrollView.contentOffset.x / self.view.frame.width))
         }
