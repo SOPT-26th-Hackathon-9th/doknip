@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/hansol/SOPT/NohHanSol/doknip/SOPT_26th_Hackathon_9th/SOPT_26th_Hackathon_9th/ActorCollectionViewCell.swift">
+   </FileRef>
+   <FileRef
       location = "group:SOPT_26th_Hackathon_9th.xcodeproj">
    </FileRef>
    <FileRef

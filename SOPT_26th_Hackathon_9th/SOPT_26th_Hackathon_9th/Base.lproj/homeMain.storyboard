@@ -457,7 +457,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaI-Cg-ov3">
-                                        <rect key="frame" x="14" y="62.000000000000007" width="68.666666666666671" height="27.333333333333336"/>
+                                        <rect key="frame" x="14" y="61.999999999999993" width="69" height="27.666666666666664"/>
                                         <state key="normal" title="Button" image="movieBtnBack"/>
                                         <connections>
                                             <action selector="back:" destination="WSt-OI-Ghp" eventType="touchUpInside" id="jit-px-7fm"/>
@@ -908,7 +908,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDF-5O-i2c">
-                                        <rect key="frame" x="20" y="50" width="14.666666666666664" height="25"/>
+                                        <rect key="frame" x="20" y="50" width="15" height="25"/>
                                         <state key="normal" image="movieBtnBack"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ON-시사회" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dat-K6-UdN">
