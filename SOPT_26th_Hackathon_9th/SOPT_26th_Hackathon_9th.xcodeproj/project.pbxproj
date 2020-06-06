@@ -15,6 +15,7 @@
 		CC0B6803248C023100FE9111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0B6801248C023100FE9111 /* LaunchScreen.storyboard */; };
 		CC0B680E248C023100FE9111 /* SOPT_26th_Hackathon_9thTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0B680D248C023100FE9111 /* SOPT_26th_Hackathon_9thTests.swift */; };
 		CC0B6819248C023100FE9111 /* SOPT_26th_Hackathon_9thUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0B6818248C023100FE9111 /* SOPT_26th_Hackathon_9thUITests.swift */; };
+		CC0B6829248C088900FE9111 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0B6828248C088900FE9111 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CC0B6814248C023100FE9111 /* SOPT_26th_Hackathon_9thUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOPT_26th_Hackathon_9thUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0B6818248C023100FE9111 /* SOPT_26th_Hackathon_9thUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOPT_26th_Hackathon_9thUITests.swift; sourceTree = "<group>"; };
 		CC0B681A248C023100FE9111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC0B6828248C088900FE9111 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				CC0B67F8248C022C00FE9111 /* SceneDelegate.swift */,
 				CC0B67FA248C022C00FE9111 /* ViewController.swift */,
 				CC0B67FC248C022C00FE9111 /* Main.storyboard */,
+				CC0B6828248C088900FE9111 /* ThirdViewController.swift */,
 				CC0B67FF248C023100FE9111 /* Assets.xcassets */,
 				CC0B6801248C023100FE9111 /* LaunchScreen.storyboard */,
 				CC0B6804248C023100FE9111 /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				CC0B67FB248C022C00FE9111 /* ViewController.swift in Sources */,
 				CC0B67F7248C022C00FE9111 /* AppDelegate.swift in Sources */,
+				CC0B6829248C088900FE9111 /* ThirdViewController.swift in Sources */,
 				CC0B67F9248C022C00FE9111 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
