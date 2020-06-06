@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
   @IBOutlet weak var collectionView: UICollectionView!
 
     
+    @IBOutlet weak var imgView: UIView!
     
     
     
@@ -25,6 +26,13 @@ class HomeViewController: UIViewController {
     setNavigationBar()
     collectionView.delegate = self
     collectionView.dataSource = self
+        
+        
+        self.imgView.backgroundColor = UIColor(patternImage: UIImage(named: "homeBgTop")!)
+
+
+     
+        
 
   }
     

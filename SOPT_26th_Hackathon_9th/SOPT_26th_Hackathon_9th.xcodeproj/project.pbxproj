@@ -16,6 +16,7 @@
 		CC0B6803248C023100FE9111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0B6801248C023100FE9111 /* LaunchScreen.storyboard */; };
 		CC0B680E248C023100FE9111 /* SOPT_26th_Hackathon_9thTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0B680D248C023100FE9111 /* SOPT_26th_Hackathon_9thTests.swift */; };
 		CC0B6819248C023100FE9111 /* SOPT_26th_Hackathon_9thUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0B6818248C023100FE9111 /* SOPT_26th_Hackathon_9thUITests.swift */; };
+		FDD3CB10248C3CC0003BBD65 /* myPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3CB0F248C3CC0003BBD65 /* myPageViewController.swift */; };
 		FDD8B698248C051700D0233C /* FourthSectionContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8B68C248C051700D0233C /* FourthSectionContentCell.swift */; };
 		FDD8B699248C051700D0233C /* FourthSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8B68D248C051700D0233C /* FourthSectionCell.swift */; };
 		FDD8B69A248C051700D0233C /* SecondSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8B68E248C051700D0233C /* SecondSectionCell.swift */; };
@@ -68,6 +69,7 @@
 		E791EE770C9415A22FD1E402 /* Pods-SOPT_26th_Hackathon_9th.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT_26th_Hackathon_9th.debug.xcconfig"; path = "Target Support Files/Pods-SOPT_26th_Hackathon_9th/Pods-SOPT_26th_Hackathon_9th.debug.xcconfig"; sourceTree = "<group>"; };
 		E8ED78983E9038039C15064D /* Pods-SOPT_26th_Hackathon_9thTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT_26th_Hackathon_9thTests.debug.xcconfig"; path = "Target Support Files/Pods-SOPT_26th_Hackathon_9thTests/Pods-SOPT_26th_Hackathon_9thTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB91D535A5AED9C895022DD2 /* Pods-SOPT_26th_Hackathon_9th-SOPT_26th_Hackathon_9thUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT_26th_Hackathon_9th-SOPT_26th_Hackathon_9thUITests.release.xcconfig"; path = "Target Support Files/Pods-SOPT_26th_Hackathon_9th-SOPT_26th_Hackathon_9thUITests/Pods-SOPT_26th_Hackathon_9th-SOPT_26th_Hackathon_9thUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FDD3CB0F248C3CC0003BBD65 /* myPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myPageViewController.swift; sourceTree = "<group>"; };
 		FDD8B68C248C051700D0233C /* FourthSectionContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthSectionContentCell.swift; sourceTree = "<group>"; };
 		FDD8B68D248C051700D0233C /* FourthSectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthSectionCell.swift; sourceTree = "<group>"; };
 		FDD8B68E248C051700D0233C /* SecondSectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondSectionCell.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				CC0B67FF248C023100FE9111 /* Assets.xcassets */,
 				CC0B6801248C023100FE9111 /* LaunchScreen.storyboard */,
 				CC0B6804248C023100FE9111 /* Info.plist */,
+				FDD3CB0F248C3CC0003BBD65 /* myPageViewController.swift */,
 			);
 			path = SOPT_26th_Hackathon_9th;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDD8B698248C051700D0233C /* FourthSectionContentCell.swift in Sources */,
+				FDD3CB10248C3CC0003BBD65 /* myPageViewController.swift in Sources */,
 				FDD8B69C248C051700D0233C /* HeaderReusableView.swift in Sources */,
 				FDD8B6A1248C051700D0233C /* FirstSectionCell.swift in Sources */,
 				CC0B67F7248C022C00FE9111 /* AppDelegate.swift in Sources */,

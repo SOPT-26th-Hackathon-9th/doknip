@@ -7,6 +7,13 @@
 //
 
 import UIKit
+import Kingfisher
+
+
+
+
+
+
 
 class ThirdSectionCell: UICollectionViewCell {
     
