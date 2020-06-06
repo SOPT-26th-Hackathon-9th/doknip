@@ -178,7 +178,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         if section == 0 || section == 1 {
             return 0
         } else {
-            return 12
+            return 0
         }
     }
     
