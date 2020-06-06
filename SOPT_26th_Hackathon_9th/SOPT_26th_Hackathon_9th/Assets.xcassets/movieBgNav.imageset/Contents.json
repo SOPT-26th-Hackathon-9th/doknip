@@ -1,9 +1,9 @@
 {
   "images" : [
     {
+      "idiom" : "universal",
       "filename" : "movieBgNav.png",
-      "scale" : "1x",
-      "idiom" : "universal"
+      "scale" : "1x"
     },
     {
       "filename" : "movieBgNav@2x.png",
@@ -12,8 +12,8 @@
     },
     {
       "scale" : "3x",
-      "idiom" : "universal",
-      "filename" : "movieBgNav@3x.png"
+      "filename" : "movieBgNav@3x.png",
+      "idiom" : "universal"
     }
   ],
   "info" : {

@@ -91,7 +91,7 @@ class SecondViewController: UIViewController {
         let bannerImageName:[String] = ["7","8"]
         //let temp:[URL] = [URL(string: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSBfOQPXQAE9iuYAB_qcKG_hmKn5LY_dzoE0oe8Wx2k7m6hcs2P&usqp=CAU")!,URL(string: "https://res.heraldm.com/phpwas/restmb_idxmake.php?idx=507&simg=/content/image/2019/11/02/20191102000070_0.jpg")!]
         Banner(imageURL: bannerImageName)
-        setmovieIfo(date: "2020.06.07", time: "16:00~18:00", story: "asdjflasdjflajsdlfjlajdlfjlaksdjflalsdjflasdfklasjdfkljalsdfjlsajdflhdjfljasdlkfjasljdfjalsjflalsjdflasjflasdkfljasdfjlasjdfljadslajfl")
+        setmovieIfo(date: "2020년 06월 07일 (일)", time: "16:00 ~ 18:00 (2시간)", story:"그 여름, 나에게도 친구가 생겼다. “내 마음이 들리니 ”외톨이 영훈은 방학식 날, 전학생 지아를 만나 서로의 비밀을 나누며 순식")
         
         setActorView()
         setRecommentView()
@@ -109,14 +109,15 @@ class SecondViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    private var characterImage:[String] = ["movieImgRole1","movieImgRole2","movieImgRole3","movieImgRole4","movieImgRole5"]
+    private var movieRecom:[String] = ["movieRecom1","movieRecom2","movieRecom3"]
 }
 extension SecondViewController:UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView.tag == 1 {
-            return 10
+            return characterImage.count
         }
-        return 10
+        return movieRecom.count
     }
 }
 
@@ -124,21 +125,22 @@ extension SecondViewController:UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView.tag == 1 {
         let cell:ActorCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: ActorCollectionViewCell.identifier, for: indexPath) as! ActorCollectionViewCell
-            cell.actorImg.setImage(path: URL(string: "https://littledeep.com/wp-content/uploads/2020/02/littledeep_monkey_style1.png")!)
+            cell.actorImg.image = UIImage(named: characterImage[indexPath.row])
+            /*cell.actorImg.setImage(path: URL(string: "https://littledeep.com/wp-content/uploads/2020/02/littledeep_monkey_style1.png")!)*/
         cell.actorName.text = "이이이"
         cell.actorRoll.text = "아아아"
             //cell.backgroundColor = UIColor.black
-            cell.actorImg.layer.cornerRadius = cell.actorImg.frame.height/2
-            cell.actorImg.layer.borderWidth = 1
+            //cell.actorImg.layer.cornerRadius = cell.actorImg.frame.height/2
+            //cell.actorImg.layer.borderWidth = 1
             // 뷰의 경계에 맞춰준다
-            cell.actorImg.clipsToBounds = true
+            //cell.actorImg.clipsToBounds = true
         return cell
         }
         else {
             let cell:RecommendCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: RecommendCollectionViewCell.identifier, for: indexPath) as! RecommendCollectionViewCell
-            cell.MovieImg.setImage(path: URL(string: "https://littledeep.com/wp-content/uploads/2020/02/littledeep_monkey_style1.png")!)
+            //cell.MovieImg.setImage(path: URL(string: "https://littledeep.com/wp-content/uploads/2020/02/littledeep_monkey_style1.png")!)
             //cell.MovieImg.layer.borderWidth = 1
-
+            cell.MovieImg.image = UIImage(named: movieRecom[indexPath.row])
             return cell
         }
     }
@@ -155,6 +157,9 @@ extension SecondViewController: UICollectionViewDelegateFlowLayout {
         if collectionView.tag == 1 {
             return UIEdgeInsets(top: 0, left: 8,bottom: 0, right: 8)
         }
+        else if collectionView.tag == 2 {
+                   return UIEdgeInsets(top: 0, left: 25,bottom: 0, right: 25)
+               }
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
 
