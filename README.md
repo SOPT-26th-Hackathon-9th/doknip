@@ -153,8 +153,11 @@ extension SecondSectionCell: UICollectionViewDelegateFlowLayout {
 
 이 뷰는 스크롤 뷰 내부에 Banner, 두개의 CollectionView를 넣는 형식으로 구성하였다.
 
+![image](https://user-images.githubusercontent.com/38745420/83956775-949e7a80-a89c-11ea-94d9-77deaa516c29.png)
+
 ### Banner 구현
 Banner는 Scrollview를 기반으로 구현하였고, Banner 라는 이름의 함수에 URL 배열을 파라미터로 받아 배열의 크기만큼 imageview를 만들어 URL을 연결하여 이미지를 띄우고 subview에 추가하는 작업을 수행하였다.
 
 그리고 pagecontroller를 구현하였다.
 ![image](https://user-images.githubusercontent.com/38745420/83956754-48533a80-a89c-11ea-9f7b-f524e2ba88f8.png)
+
