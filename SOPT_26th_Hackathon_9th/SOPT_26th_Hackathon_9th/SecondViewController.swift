@@ -94,9 +94,8 @@ class SecondViewController: UIViewController {
     }
     
 
-<<<<<<< HEAD
 
-=======
+
     /*
     // MARK: - Navigation
 
@@ -108,7 +107,7 @@ class SecondViewController: UIViewController {
     */
     private var characterImage:[String] = ["movieImgRole1","movieImgRole2","movieImgRole3","movieImgRole4","movieImgRole5"]
     private var movieRecom:[String] = ["movieRecom1","movieRecom2","movieRecom3"]
->>>>>>> 6c9ae4caec4157dae97a956905d49818f203aea2
+
 }
 extension SecondViewController:UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

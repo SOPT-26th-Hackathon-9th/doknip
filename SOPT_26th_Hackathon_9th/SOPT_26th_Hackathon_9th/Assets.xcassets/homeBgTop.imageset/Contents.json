@@ -1,21 +1,6 @@
 {
   "images" : [
     {
-<<<<<<< HEAD
-      "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "homeBgTop.png"
-    },
-    {
-      "filename" : "homeBgTop@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "filename" : "homeBgTop@3x.png",
-      "scale" : "3x",
-      "idiom" : "universal"
-=======
       "scale" : "1x",
       "filename" : "homeBgTop.png",
       "idiom" : "universal"
@@ -29,7 +14,6 @@
       "scale" : "3x",
       "idiom" : "universal",
       "filename" : "homeBgTop@3x.png"
->>>>>>> 6c9ae4caec4157dae97a956905d49818f203aea2
     }
   ],
   "info" : {
