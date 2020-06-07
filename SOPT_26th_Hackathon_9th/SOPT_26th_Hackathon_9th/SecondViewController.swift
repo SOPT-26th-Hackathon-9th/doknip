@@ -7,6 +7,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var BannerScrollView: UIScrollView!
     
     @IBAction func goBack(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     @IBAction func searchButton(_ sender: Any) {
     }

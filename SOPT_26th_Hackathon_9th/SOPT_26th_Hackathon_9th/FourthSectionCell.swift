@@ -46,15 +46,24 @@ class FourthSectionCell: UICollectionViewCell {
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FourthSectionContentCell", for: indexPath) as! FourthSectionContentCell
             
-            
-            let img1 = UIImage(named: "fourthSectionImg1")
-            let img2 = UIImage(named: "fourthSectionImg2")
-            
-            let images : [UIImage?] = [img1,img2,img1,img2]
-            cell.imageView.image = images[indexPath.row]
-            
-            return cell
-        }
+                    
+                    let url1:String = "https://post-phinf.pstatic.net/MjAxOTA5MjNfMTkz/MDAxNTY5MjAwNzQ0NjQ0.kdw9-CniIhgEAauuDCZPBDdDnRu9Jxip7qaygfCzurgg.5sxKdLn39pIAXOmtyAo8gGAo1LNRzU2wX1yFZrLIyeYg.JPEG/%EC%82%AC%EC%A7%841.jpg?type=w1200"
+                    
+                    let url2:String = "https://c-sf.smule.com/sf/s40/arr/25/4c/9f9fddae-fcd4-4d83-b766-5fb7d4e95f6f_512.jpg"
+                    let url3:String = "https://post-phinf.pstatic.net/MjAxOTA5MjNfMTkz/MDAxNTY5MjAwNzQ0NjQ0.kdw9-CniIhgEAauuDCZPBDdDnRu9Jxip7qaygfCzurgg.5sxKdLn39pIAXOmtyAo8gGAo1LNRzU2wX1yFZrLIyeYg.JPEG/%EC%82%AC%EC%A7%841.jpg?type=w1200"
+                    let url4:String = "https://upload.wikimedia.org/wikipedia/ko/c/c8/%EB%B2%8C%EC%83%88_%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg"
+            //        imgView.setImage(from:url)
+                    
+                    
+
+                    
+                    let urls : [String?] = [url4,url1,url2,url4]
+                    cell.imageView.setImage(from: urls[indexPath.row]!)
+            //        cell.imageView.image = images[indexPath.row]
+                    
+                    return cell
+                }
+                
         
         
     }
